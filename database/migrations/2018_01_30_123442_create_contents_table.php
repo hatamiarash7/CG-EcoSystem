@@ -1,6 +1,8 @@
 <?php
 
-use Illuminate\{Support\Facades\Schema,Database\Schema\Blueprint,Database\Migrations\Migration};
+use Illuminate\{
+    Database\Migrations\Migration, Database\Schema\Blueprint, Support\Facades\Schema
+};
 
 class CreateContentsTable extends Migration
 {

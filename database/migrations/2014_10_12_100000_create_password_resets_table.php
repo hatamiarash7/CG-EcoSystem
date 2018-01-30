@@ -1,6 +1,8 @@
 <?php
 
-use Illuminate\{Database\Migrations\Migration,Database\Schema\Blueprint,Support\Facades\Schema};
+use Illuminate\{
+    Database\Migrations\Migration, Database\Schema\Blueprint, Support\Facades\Schema
+};
 
 class CreatePasswordResetsTable extends Migration
 {

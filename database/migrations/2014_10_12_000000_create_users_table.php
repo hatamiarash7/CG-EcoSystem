@@ -1,6 +1,8 @@
 <?php
 
-use Illuminate\{Database\Migrations\Migration,Database\Schema\Blueprint,Support\Facades\Schema};
+use Illuminate\{
+    Database\Migrations\Migration, Database\Schema\Blueprint, Support\Facades\Schema
+};
 
 class CreateUsersTable extends Migration
 {
@@ -16,6 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('age');
+            $table->('');
             $table->rememberToken();
             $table->timestamps();
         });
