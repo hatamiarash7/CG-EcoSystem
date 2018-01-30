@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
+use Illuminate\{Support\Facades\Schema,Database\Schema\Blueprint,Database\Migrations\Migration};
 
 class CreateContentsTable extends Migration
 {
@@ -13,7 +11,7 @@ class CreateContentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('contents', function (Blueprint $table) {
+        Schema::connection('store')->create('contents', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });

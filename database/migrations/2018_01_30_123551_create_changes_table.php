@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
+use Illuminate\{Database\Migrations\Migration,Database\Schema\Blueprint,Support\Facades\Schema};
 
 class CreateChangesTable extends Migration
 {
@@ -13,7 +11,7 @@ class CreateChangesTable extends Migration
      */
     public function up()
     {
-        Schema::create('changes', function (Blueprint $table) {
+        Schema::connection('store')->create('changes', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
